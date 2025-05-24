@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .starburst {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .starburst svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .starburst text {
+      fill: orange;
+      font-size: 16px;
+      font-weight: bold;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+
+    @media (max-width: 600px) {
+      .starburst {
+        width: 70px;
+        height: 70px;
+        top: 15%;
+        left: 5%;
+      }
+
+      .starburst text {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="starburst">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <polygon points="50,5 60,30 90,30 65,50 75,80 50,60 25,80 35,50 10,30 40,30"
+               fill="white" stroke="orange" stroke-width="2"/>
+      <text x="50" y="45">75%</text>
+      <text x="50" y="60">OFF</text>
+    </svg>
+  </div>
+
+</body>
+</html>
+
+
