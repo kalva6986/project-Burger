@@ -3,47 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <style>
-     header{
-            background-color: orange;
-            padding: 20px;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Final</title>
+    <style>
+        body{
+            background: linear-gradient(45deg,#f99d1e,#f99d1e,rgb(241, 102, 102),orange,rgb(239, 146, 74),rgb(224, 144, 78),orange,red);
+            overflow-x: hidden;
         }
-        ul{
-            display: flex;
-            list-style-type: none;
-            font-size: larger;
-            font-weight: bold;
-            color: white;
-        }
-        ul li{
-            margin: 10px;
-        }
-        i{
-            color: white;
-        }
-        .logo{
-            /* text-align: right; */
-            /* background-color: blue; */
-        }
-        .menu{
-            text-align: right;
-            /* background-color: aqua; */
-        }
-        .menu ul li{
-            text-align: center;
-        }
-        .ham{
-            font-size: 34px;
-            /* text-align: left; */
-        }
+       
         .head{
-            justify-content: space-around;
+           
             align-items: center;
             justify-items: center;
             /* background-color: black; */
@@ -51,7 +23,7 @@
             display: flex;
         }
         .hero{
-            
+            display: flex;
             padding: 30px;
         }
         .left-hero{
@@ -59,49 +31,22 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-
             /* background-color: aqua; */
         }
         .left-hero, .right-hero{
-            width: 50vw;
             height: 100vh;
         }
         .right-hero img{
             width: 100%;
             height: auto;
-            background-color: aliceblue;
+            
         }
-    
-    /*.stars {
-      color: #f7a400;
-      font-size: 15px;
-    }
-    .bomma{
-      background-color: red;
-    }
-    .bomma ::before{
-      background: url('images/Rose Gold Feminine Calligraphy Monogram Logo(73) 1.png');
-    }
-    h1 ::before{
-      background-image: url('images/polygon 2.png');
-    }*/
-    .text {
-      color: #f7a400;
-      font-weight: 500;
-      font-size: 1.1rem;
-    }
-    
- 
-  .card {
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-  }
-  
+        
 
 .card-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 7px;
+  gap: 20px;
   justify-items: center;
 }
 
@@ -116,11 +61,12 @@
   height: 100%;
   background: linear-gradient(to bottom right, #ff8400, #ff6f00);
   clip-path: url(#roundedStepClip);
-  -webkit-clip-path: url(#roundedStepClip); 
+  -webkit-clip-path: url(#roundedStepClip);
+  padding: 20px;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-sizing: border-box;
   position: relative;
   text-align: center;
@@ -133,16 +79,12 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  
+  border-radius: 12px;
 }
 
 .card h3 {
   font-size: 1.4rem;
   font-weight: bold;
-  margin-top: -30px;
-}
-h4{
-  text-align: right;
 }
 
 .info-icon {
@@ -164,8 +106,7 @@ h4{
   align-items: center;
   justify-content: center;
 }
-
-    .how-it-works-title {
+ .how-it-works-title {
       text-align: center;
       color: white;
       font-size: 40px;
@@ -223,63 +164,146 @@ h4{
       margin-top: 20px;
       display: inline-block;
     }
-     
+     /*body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f1f1f1;
+      }*/
+
+      .stack-container {
+        position: relative;
+        width: 250px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+
+      .stack-container .card9 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        color: orange;
+        font-size: 22px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+      }
+
+      .card9:nth-child(1) {
+        z-index: 3;
+      }
+
+      .card9:nth-child(2) {
+        transform: rotate(-5deg) translateY(11px);
+        z-index: 2;
+      }
+
+      .card9:nth-child(3) {
+        transform: rotate(-5deg) translateY(-11px);
+        z-index: 1;
+      }
  
 
-  </style>
 
 
-  </head>
-<body style="background: linear-gradient(25deg,rgb(219, 179, 21),orange,rgb(239, 146, 74),orange); width: 100vw;height:auto;overflow-x: hidden;">
-  <div class="container-fluid">
-        <header>
-            <div class="row head">
-                <div class="col-lg-2 logo">
-                    <img src="images/burg.jpg.PNG" alt="">
-                </div>
-                <div class="col-lg-8 menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>Our Outlets</li>
-                        <li>Order</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 ham">
-                    <i class="bi bi-list"></i>
-                </div>
-            </div>
-        </header>
-
-        <div class="container">
+    </style>
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-lg " >
+    <div class="container-fluid" style="color: white;text-align: center;">
+        <a class="navbar-brand" href="#"><img src="images/burgername.jpg.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown row">
+        <ul class="navbar-nav">
+        <li class="nav-item" >
+          <a class="nav-link active" aria-current="page" href="#" ><p style="color: white;">Home</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p style="color: white;">Our Outlets</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> <p style="color: white;">Orders</p></a>
+        </li>
+        <li class="nav-item dropdown">
+           <a class="nav-link" href="#"> <p style="color: white;">Contact</p></a>
+        </li>
+        </ul>
+        <i class="bi bi-list" style="margin-top: -10px;justify-items: right;"></i>
+       </div>
+   </div>
+  </nav>
+ </header>   
+ <div class="container">
+  
             <div class="row hero">
-                <div class="col-lg-6 left-hero">
+                <div class="col-lg-6 left-hero" >
                     <div class="content">
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i>
+                       <div class="stack-container">
+      <div class="card9">
+        <div>
+          <p>
+             <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i> 4.5<br>5K+ Happy Review
-                        </div>
-                        <div class="crispy" style="font-size: 40px;color:white;margin-bottom: 5px;">Crispy, Crunchy, Veggie Deliciousness!</div>
-                        <div class="main-heading" style="font-size: 50px;font-weight: bold;color: white;margin-bottom: 20px;">Burgers That<br>Love the Earth!</div>
-                        <div class="buttons">
-                            <button style="background: white;color: orange;padding: 10px;border-radius: 20px;">Explore</button>
-                            <a href="#" style="color: white;text-decoration: none;">▶ How to get order…</a>
-                        </div>
-                        </div>
-                </div>
+                                <i class="fa-solid fa-star-half"></i>
+            &nbsp; | 4.5
+          </p>
+        </div>
+        <div>
+          <p>5K+ Happy Reviews</p>
+        </div>
+      </div>
+      <div class="card9"></div>
+      <div class="card9"></div>
+    </div>
+    
+     <div class="crispy" style="font-size: 40px;color:white;margin-bottom: 5px;">Crispy, Crunchy, Veggie Deliciousness!</div>
+      <div class="main-heading" style="font-size: 50px;font-weight: bold;color: white;margin-bottom: 20px;">Burgers That<br>Love the Earth!</div>
+       <div class="buttons">
+      <button style="background: white;color: orange;padding: 10px;border-radius: 20px;">Explore</button>
+       <a href="#" style="color: white;text-decoration: none;">▶ How to get order…</a>
+      </div>
+      </div>
+      </div>
+        
+
                 <div class="col-lg-6 right-hero">
-                    <img src="images/Screenshot 2025-05-26 150255.png">
+                  <div class="vec" style="width: 10vw;height: 15vh;color: white;margin-top: 10px;margin-left: 150px;margin-bottom: 150px;">
+                     <img src="images/Vector 6.png" style="width: 100%;height: 100%;">
+                       </div>
+                      <!-- <svg
+      width="107"
+      height="157"
+      viewBox="0 0 157 157"
+     
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M82.0454 4.93648C92.1657 -3.63691 107.734 0.534514 112.211 13.0194L117.57 27.96C119.487 33.3054 123.695 37.5131 129.04 39.4303L143.981 44.7887C156.465 49.2664 160.637 64.8343 152.064 74.9546L141.804 87.0654C138.133 91.3984 136.593 97.1462 137.605 102.734L140.435 118.352C142.8 131.403 131.403 142.8 118.352 140.435L102.734 137.605C97.1462 136.593 91.3984 138.133 87.0654 141.804L74.9546 152.064C64.8343 160.637 49.2664 156.465 44.7887 143.981L39.4303 129.04C37.5131 123.695 33.3054 119.487 27.96 117.57L13.0194 112.211C0.534508 107.734 -3.63691 92.1657 4.93648 82.0454L15.1962 69.9346C18.8669 65.6016 20.407 59.8538 19.3946 54.2659L16.5648 38.6478C14.2002 25.5967 25.5967 14.2002 38.6478 16.5648L54.2659 19.3946C59.8538 20.407 65.6016 18.8669 69.9346 15.1962L82.0454 4.93648Z"
+        fill="#FFF"
+      />
+    
+                      </svg>
+                      <div class="chukka" style="
+                        clip-path: url(#roundedStepClip);
+  -webkit-clip-path: url(#roundedStepClip);">
+                      </div>-->
+                      <img src="images/final2.jpg.png" style="margin-top: -110px;" >
                 </div>
             </div>
         </div>
-
-    </div>
-    
-<!--hero end-->
-<!--task2-start-->
+  <!--task2-start-->
       <!-- SVG ClipPath Definition (Same as before) -->
        <p style="font-size: 40px;text-align: center;color: white;margin-top: 10px;">-Hot Chips-</p>
        <p style="font-size: 30px;text-align: center;color: white;">-LOCALLY SOURCED,ORGANIC INGREDIENTS FOR A FRESH AND ECO-FRIENDLY EXPERIENCE-</p>
@@ -312,7 +336,7 @@ h4{
     <!-- Card Row Container -->
     <div class="card-row" id="orders">
       <!-- Repeat this .card-container block 4 times -->
-      <div class="card-container first">
+      <div class="card-container first" style="margin-top: 100px;">
         <div
           class="card"
           style="
@@ -322,7 +346,7 @@ h4{
         >
           <i class="bi bi-heart info-icon heart"></i>
           <img
-            src="images/Rose Gold Feminine Calligraphy Monogram Logo(71) 1.png"
+            src="images/Screenshot 2025-05-26 145845.png"
             alt="Veg Chizy Burger"
             class="burger-img"
           />
@@ -346,7 +370,7 @@ h4{
         >
           <i class="bi bi-heart info-icon heart"></i>
           <img
-            src="images/Rose Gold Feminine Calligraphy Monogram Logo(71) 2.png"
+            src="images/Screenshot 2025-05-26 150102.png"
             alt="Veg Chizy Burger"
             class="burger-img"
           />
@@ -360,7 +384,7 @@ h4{
       </div>
 
       <!-- Repeat as needed -->
-      <div class="card-container">
+      <div class="card-container" style="margin-top: 100px;">
         <div
           class="card"
           style="
@@ -370,7 +394,7 @@ h4{
         >
           <i class="bi bi-heart info-icon heart"></i>
           <img
-            src="images/Rose Gold Feminine Calligraphy Monogram Logo(71) 4.png"
+            src="images/Screenshot 2025-05-26 145845.png"
             alt="Veg Chizy Burger"
             class="burger-img"
           />
@@ -393,7 +417,7 @@ h4{
         >
           <i class="bi bi-heart info-icon heart"></i>
           <img
-            src="images/Rose Gold Feminine Calligraphy Monogram Logo(71) 3.png"
+            src="images/Screenshot 2025-05-26 150102.png"
             alt="Veg Chizy Burger"
             class="burger-img"
           />
@@ -405,12 +429,17 @@ h4{
           <button class="tail-button">→</button>
         </div>
       </div>
+     <!--  <div style="display: flex;color: white;font-size: 40px;justify-content: center;align-items: center;width: 100vw;height: 5vh;"> 
+      <i class="bi bi-dot"></i>
+      <i class="bi bi-dot"></i>
+      <i class="bi bi-dot"></i>
+    </div>-->
     </div>
-<!--task2-end-->
-
-<!--task3-start-->
-<div class="container-fluid banner" style="color: white;text-align: center;margin-top: 50px;">
-  <div class="row align-items-center" style="width:100vw;height: 80vh;background-color: red;">
+   
+  <!--task2-end-->
+  <!--task3-start-->
+  <div class="container-fluid banner" style="color: white;text-align: center;margin-top: 100px;">
+  <div class="row align-items-center" style="width:100vw;height: 51vh;background:linear-gradient(45deg,red,orange);">
     <div class="col-md-6">
       <p style="font-size: 30px;">Get Up To</p>
       <h1 style="font-size: 50px;">50% OFF</h1>
@@ -418,11 +447,12 @@ h4{
       <button class="order" style="background-color: white;color: orange;border-radius: 10px;">Order Now</button>
     </div>
     <div class="col-md-6">
-      <img src="images/Group 20.png" style="max-width: 100%;height: 80%;">
+      <img src="images/Group 20.png" style="max-width: 100%;height: 80%;margin-top: -90px;">
     </div>
   </div>
-</div>
-
+  </div>
+  <!--task3 end-->
+  <!--task4 start-->
  <div class="container py-5">
     <h2 class="who" style="text-align: center;margin-bottom: 20px;color: white;">— WHO WE ARE —</h2>
     <div class="row gy-4 align-items-center">
@@ -436,12 +466,13 @@ h4{
       </div>
       <div class="col-md-6">
         <div class="pic6" style="border-radius: 25px;padding: 16px;justify-content: center;align-items: center;">
-          <img src="Group 24.png" style="max-width: 100%;border-radius: 25px;">
+          <img src="images/Group 24.png" style="max-width: 100%;border-radius: 25px;">
         </div>
       </div>
     </div>
   </div>
-
+  <!--task4 end-->
+  <!--task5 start-->
   <div class="container">
     <div class="how" style="display: flex;margin-top: 50px;">
     <h4 class="how-it-works-title" style="text-align: center;width: 80vw;">— HOW DOES IT WORKS —</h4>
@@ -489,15 +520,16 @@ h4{
 
     </div>
   </div>
-
-<div class="container my-5">
+  <!--task5 end-->
+  <!--task6 start-->
+  <div class="container my-5">
   <h2 class="text-center text-white mb-4">— WHAT OUR CUSTOMER SAYS —</h2>
   <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
      
       <div class="carousel-item active">
-          <div class="card1 mb-3" style="width: 60vw;height: 60vh;text-align: center;align-items: center;padding: 20px;margin: auto;background-color: white;color: #f76b1c;border-radius: 20px;">
-    <div class="bomma" style="width: 5vw;height: 5vh;border-radius: 100px; align-items: center;justify-content: center;position: absolute;left: 45%;">
+          <div class="card1 mb-3" style="width: 60vw;height: 60vh;text-align: center;align-items: center;padding: 20px;margin: auto;background-color:white;color: #f76b1c;border-radius: 20px;">
+    <div class="bomma" style="width: 5vw;height: 5vh;border-radius: 100px; align-items: center;justify-content: center;position: absolute;left: 45%;background-color: orange;">
   <img src="images/quote-left 1.png"  style="width: 50%;height: 50%;border-radius: 100px;align-items: center;"></div>
   <div class="card-body" style="color: #f76b1c;padding: 50px;justify-content: space-evenly;">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, neque id autem et possimus voluptas corporis consequuntur quidem? Praesentium, animi.</p>
@@ -515,7 +547,7 @@ h4{
       
       <div class="carousel-item">
         <div class="card1 mb-3" style="width: 60vw;height: 60vh;text-align: center;align-items: center;padding: 20px;margin: auto;background-color: white;color: #f76b1c;border-radius: 20px;">
-    <div class="bomma" style="width: 5vw;height: 5vh;border-radius: 100px;left: 45%;position: absolute;">
+    <div class="bomma" style="width: 5vw;height: 5vh;border-radius: 100px;left: 45%;position: absolute;background-color: orange;">
   <img src="images/quote-left 1.png"  style="width: 50%;height: 50%;border-radius: 100px;align-items: center;"></div>
   <div class="card-body" style="color: #f76b1c;padding: 50px;justify-content: space-evenly;">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, neque id autem et possimus voluptas corporis consequuntur quidem? Praesentium, animi.</p>
@@ -527,7 +559,7 @@ h4{
       <p >kavya</p>
       <p style="margin-top: -10px;">ABC company,CEO</p>
       </div>
-</div>
+ </div>
     </div>
 
     
@@ -538,12 +570,13 @@ h4{
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
-</div>
-</div>
-<!--task6-end-->
- <!--<img src="images/Burger App.jpg">-->
-<footer style="background-color: #ff6948;width: 100vw;height: auto;padding: 50px;margin-top: 50px;">
-<div class="row" id="con">
+ </div>
+ </div>
+
+  <!--task6 end-->
+  <!--footer-->
+  <footer style="background-color: #ff6948;width: 100vw;height: auto;padding: 20px;margin-top: 50px;">
+ <div class="row" id="con">
   <div class="col-lg-4 col-sm-12">
     <p style="color: white;font-size: 30px;">Burger</p>
     <p style="top: -520px;color: white;margin-bottom: 10px;">Lorem ipsum dolor sit amet, us repudiandae, sequi ducimus expedita nemo maiores qui necessitatibus quas autem consequatur.</p>
@@ -576,8 +609,8 @@ h4{
   <p style="color: white;text-align: center;">Burger.com @All Right Reserve.</p>
   </div>
   
-</div>
+ </div>
 
-</footer>
+ </footer>
 </body>
 </html>
